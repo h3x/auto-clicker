@@ -70,7 +70,7 @@ class FindCookie(threading.Thread):
     
   def run(self):
     while(self.start_look):
-      cookie = pyautogui.locateOnScreen('cookie.png', confidence=.5)
+      cookie = pyautogui.locateOnScreen('cookie.png', confidence=0.5)
       if(cookie != None):
           print((cookie[0], cookie[1]))
           print(mouse.position)
@@ -89,6 +89,7 @@ def on_press(key):
     if key == start_stop_key:
         if click_thread.running:
             click_thread.stop_clicking()
+            print("starting")
         else:
             click_thread.start_clicking()
     elif key == position_key:
