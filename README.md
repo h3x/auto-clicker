@@ -2,6 +2,8 @@
 
 Supported platforms: Linux only
 
+For use with the site at [https://orteil.dashnet.org/cookieclicker/](https://orteil.dashnet.org/cookieclicker/)
+
 to install and run the cookie-clicker auto clicker, first clone this repo
 
 ```
